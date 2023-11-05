@@ -507,6 +507,8 @@ body {
 
 	fill: rgba(255, 110, 48, 0.6);
 	border-top-right-radius: 15px;
+
+	visibility: hidden;
 }
 .popular-item:hover {
 	border-radius: 15px;
