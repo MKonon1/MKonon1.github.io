@@ -93,16 +93,19 @@ body {
 }
 
 .nav {
-	/* width: 1214.744px; */
-	width: 1440px;
+	width: 1214.744px;
 	height: 48px;
+
+	/* width: 1440px;
+	height: 48px; */
 
 	/* margin: 0 auto; */
 	/* padding-top: 26px; */
 
 	box-sizing: content-box;
-	position: relative;
+	position: absolute;
 	top: 3%;
+	left: 10%;
 }
 
 .nav-menu {
@@ -123,7 +126,7 @@ body {
 	height: 33px;
 	position: relative;
 	top: 20%;
-	left: 1%;
+	left: 0%;
 }
 .nav-logo {
 	display: block;
@@ -131,7 +134,7 @@ body {
 	height: 20.949px;
 
 	position: absolute;
-	top: 20%;
+	top: 18%;
 	left: 0%;
 }
 .nav-antools-h3 {
@@ -156,7 +159,7 @@ body {
 	width: 203px;
 	height: 48px;
 	position: absolute;
-	right: 8%;
+	right: 0%;
 	top: 0%;
 }
 .login {
@@ -202,7 +205,9 @@ body {
 	height: 700px;
 
 	margin: 0 auto;
+	padding: 0 15px;
 	position: relative;
+	box-sizing: content-box;
 }
 
 .main-block-title {
@@ -217,10 +222,11 @@ body {
 
 	margin: 0 auto;
 
-	margin-top: 104px;
+	/* margin-top: 104px; */
 	/* margin-left: 111px; */
 	position: absolute;
-	left: 0%;
+	top: 25%;
+	left: 10%;
 }
 
 .title-h1 {
@@ -317,6 +323,7 @@ body {
 	position: absolute;
 	right: 0%;
 }
+
 .illustration-block {
 	display: block;
 	position: absolute;
@@ -331,7 +338,7 @@ body {
 	height: 58px;
 	position: absolute;
 	bottom: 0%;
-	left: 0%;
+	left: 10%;
 	/* margin-left: 111px; */
 }
 .logo-facebook {
@@ -343,7 +350,10 @@ body {
 	position: absolute;
 	left: 0%;
 }
-.fb-path:hover {
+.logo-facebook:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.35);
+}
+.logo-facebook:hover .fb-path {
 	fill: #ffa537;
 	fill-opacity: 100;
 }
@@ -357,7 +367,10 @@ body {
 	margin: 0 auto;
 	left: 33%;
 }
-.inst-path:hover {
+.logo-instagram:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.35);
+}
+.logo-instagram:hover .inst-path {
 	fill: #ffa537;
 	fill-opacity: 100;
 }
@@ -372,7 +385,10 @@ body {
 	position: absolute;
 	right: 0%;
 }
-.tw-path:hover {
+.logo-twitter:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.35);
+}
+.logo-twitter:hover .tw-path {
 	fill: #ffa537;
 	fill-opacity: 100;
 }
@@ -432,6 +448,7 @@ body {
 
 	border-radius: 15px;
 	background: #1e252b;
+	/* position: relative; */
 }
 
 /* .popular-item:focus-visible {
@@ -466,62 +483,76 @@ body {
 }
 
 /* .popular-item:hover::before {
-    display: block;
+	display: block;
 
-    content: "";
+	content: '';
 
-    width: 65px;
-    height: 65px;
+	width: 65px;
+	height: 65px;
 
-    background: rgba(255, 110, 48, 0.60);
-    filter: blur(40px);
-    position: absolute;
-    top: 6px;
-    right: 16px;
+	background: rgba(255, 110, 48, 0.6);
+	filter: blur(40px);
+	position: absolute;
 } */
 
 .ellipse {
 	display: block;
 	position: absolute;
 
-	width: 65px;
-	height: 65px;
+	top: 0%;
+	right: 0%;
+
+	/* width: 65px;
+	height: 65px; */
 
 	fill: rgba(255, 110, 48, 0.6);
-	filter: blur(25px);
-	top: 6px;
-	right: 16px;
-	visibility: hidden;
+	border-top-right-radius: 15px;
 }
-
-.ellipse:hover {
-	display: block;
-	position: absolute;
-
-	width: 65px;
-	height: 65px;
-
-	fill: rgba(255, 110, 48, 0.6);
-	filter: blur(25px);
-	top: 6px;
-	right: 16px;
-}
-/* .mask-rectangle {
-    display: block;
-
-    width: 392px;
-    height: 294px;
-
-    border-radius: 15px;
-    background: #283036;
-    
-} */
-
 .popular-item:hover {
 	border-radius: 15px;
 	/* border: 2px solid rgba(255, 255, 255, 0.80); */
 	background: rgba(40, 48, 54, 0.6);
 	backdrop-filter: blur(25px);
+}
+
+.popular-item:hover .button-heart {
+	background: rgba(40, 48, 54, 0.6);
+}
+.popular-item:hover .button-file {
+	background: rgba(40, 48, 54, 0.6);
+}
+/* .popular-item:hover .button-visit {
+	background: rgba(40, 48, 54, 0.6);
+} */
+.popular-item:hover .button-visit {
+	background: rgba(40, 48, 54, 0.6);
+}
+
+#bt-v:hover {
+	background: #ff6e30;
+	color: #fff;
+}
+
+.tools-brands-li:hover .button-heart {
+	background: rgba(40, 48, 54, 0.6);
+}
+
+.tools-brands-li:hover .button-file {
+	background: rgba(40, 48, 54, 0.6);
+}
+
+.tools-brands-li:hover .button-visit-2 {
+	background: rgba(40, 48, 54, 0.6);
+}
+
+#bt-v-2:hover {
+	background: #ff6e30;
+	color: #fff;
+}
+
+.button-item:hover .heart-test {
+	fill: #fd3b41;
+	fill-opacity: 100%;
 }
 
 .popular-block {
@@ -584,6 +615,30 @@ body {
 	margin-right: 12px;
 }
 
+.button-item:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.button-item-2:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.button-visit:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.button-heart:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.button-file:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.button-visit-2:hover {
+	box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
 .button-item-2 {
 	display: block;
 
@@ -591,6 +646,13 @@ body {
 	height: 42px;
 
 	margin-right: 124px;
+}
+
+.button-item-3 {
+	display: block;
+
+	width: 106px;
+	height: 42px;
 }
 
 .item-heading {
@@ -769,9 +831,19 @@ body {
 	line-height: normal;
 }
 
-.button-visit:hover {
-	background: #ff6e30;
-	color: #fff;
+.button-visit-2 {
+	width: 106px;
+	height: 42px;
+
+	border-radius: 8px;
+	background: #1e252b;
+
+	color: rgba(255, 255, 255, 0.55);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
 }
 
 .block-1-title {
@@ -882,6 +954,11 @@ body {
 .heart-test:hover {
 	fill: #fd3b41 !important;
 	fill-opacity: 100;
+}
+
+.button-file:hover .file-icon-test {
+	fill: #ffffff8c;
+	fill-opacity: 55;
 }
 
 .file-icon-test:hover {
@@ -1266,6 +1343,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	outline: none;
 
 	position: absolute;
 	top: 30%;
