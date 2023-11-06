@@ -1830,7 +1830,8 @@ body {
 	backdrop-filter: blur(25px);
 	position: absolute;
 	left: 15%;
-	bottom: 5%;
+	bottom: 6%;
+	z-index: 2;
 }
 
 .name-manager {
@@ -1932,4 +1933,15 @@ body {
 	top: 35%;
 	left: 3%;
 	z-index: 1;
+}
+
+.large-ellipse {
+	display: block;
+	position: absolute;
+	/* width: 65px;
+	height: 65px; */
+
+	z-index: -1;
+	top: 55%;
+	left: 23%;
 }
